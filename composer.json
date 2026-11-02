@@ -1,0 +1,11 @@
+   {
+       "name": "eventease/booking-system",
+       "description": "EventEase event booking website",
+       "type": "project",
+       "license": "proprietary",
+       "require": {
+           "phpmailer/phpmailer": "^7.1",
+           "razorpay/razorpay": "^2.9"
+       }
+   }
+   

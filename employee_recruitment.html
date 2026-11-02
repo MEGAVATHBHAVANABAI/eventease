@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Recruitment | EventEase</title>
+
+    <link
+        rel="stylesheet"
+        href="css/employee_recruitment.css" >
+
+</head>
+
+<body>
+
+    <div class="recruitment-container">
+
+        <div class="recruitment-card">
+
+            <div class="logo-area">
+                <div class="logo-text">
+                    BY EVENT BOOKING
+                </div>
+            </div>
+
+
+            <h1>Employee Recruitment</h1>
+
+            <p class="subtitle">
+                Join our team of trusted event professionals
+            </p>
+
+
+            <!-- Employee Form -->
+
+            <form
+                id="employeeForm"
+                action="php/employee_recruitment.php"
+                method="POST">
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="skills">
+                        Skills
+                    </label>
+
+                    <textarea
+                        id="skills"
+                        name="skills"
+                        placeholder="Example: Mehendi, Makeup, Decoration, Photography..."
+                        rows="4"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+
+                    <label for="whatsapp">
+                        WhatsApp Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="whatsapp"
+                        name="whatsapp"
+                        placeholder="Enter your WhatsApp number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required>
+                </div>
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+                </div>
+                <div class="form-group">
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        placeholder="Enter your complete address"
+                        rows="4"
+                        required></textarea>
+                </div>
+                <button
+                    type="submit"
+                    class="submit-btn">
+                    Submit
+                </button>
+
+            </form>
+            <div
+                id="successMessage"
+                class="success-message">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h2>
+                    Request Submitted!
+                </h2>
+
+                <p>
+                    Your request has been sent to the admin.
+                    If there is a requirement, the admin will contact you.
+                </p>
+
+            </div>
+            <a
+                href="index.html"
+                class="back-home-btn">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+    <script>
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        if (params.get("success") === "1") {
+
+            document.getElementById("employeeForm")
+                .style.display = "none";
+
+            document.getElementById("successMessage")
+                .style.display = "block";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

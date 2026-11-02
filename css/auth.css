@@ -1,0 +1,258 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-container{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:15px;
+width:380px;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.login-box h2{
+text-align:center;
+margin-bottom:10px;
+}
+
+.login-box p{
+text-align:center;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#084298;
+}
+
+.home-link{
+display:block;
+text-align:center;
+margin-top:15px;
+text-decoration:none;
+}
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px 15px;
+}
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px;
+}
+input {
+    width: 100%;
+    min-height: 48px;
+    padding: 13px 12px;
+    font-size: 16px;
+    margin: 8px 0;
+}
+button {
+    width: 100%;
+    min-height: 50px;
+    padding: 13px 15px;
+    font-size: 16px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+.home-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    .login-box {
+        max-width: 400px;
+        padding: 32px 25px;
+        border-radius: 14px;
+    }
+
+    .login-box h2 {
+        font-size: 25px;
+    }
+
+    .login-box p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    input {
+        min-height: 50px;
+        font-size: 16px;
+    }
+
+    button {
+        min-height: 50px;
+    }
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 14px;
+    }
+
+    .login-box h2 {
+        font-size: 23px;
+        margin-bottom: 8px;
+    }
+
+    .login-box p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
+    input {
+        width: 100%;
+        min-height: 50px;
+        padding: 13px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    button {
+        width: 100%;
+        min-height: 52px;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .home-link {
+        margin-top: 12px;
+        min-height: 45px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px) {
+
+    body {
+        padding: 10px 7px;
+    }
+
+    .login-box {
+        padding: 25px 16px;
+        border-radius: 12px;
+    }
+
+    .login-box h2 {
+        font-size: 21px;
+    }
+
+    .login-box p {
+        font-size: 13px;
+    }
+
+    input {
+        min-height: 48px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        min-height: 50px;
+        font-size: 15px;
+    }
+
+    .home-link {
+        font-size: 14px;
+    }
+}
+@media (max-width: 360px) {
+    body {
+        padding: 8px 5px;
+    }
+    .login-box {
+        padding: 22px 13px;
+    }
+    .login-box h2 {
+        font-size: 20px;
+    }
+    input {
+        min-height: 48px;
+    }
+    button {
+        min-height: 48px;
+        font-size: 15px;
+    }
+}
+@media (hover: none) and (pointer: coarse) {
+
+    button:active {
+        transform: scale(.98);
+    }
+    .home-link:active {
+        opacity: .7;
+    }
+}
+@media (hover: hover) and (pointer: fine) {
+
+    button:hover {
+        background: #084298;
+    }
+}

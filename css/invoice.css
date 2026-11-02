@@ -1,0 +1,227 @@
+body {
+    background: whitesmoke !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    box-sizing: border-box;
+
+    background: #fffdf9;
+    border: none;
+}
+
+.invoice-logo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    opacity: 0.85;
+
+    z-index: 0;
+}
+
+.invoice-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card > *:not(.invoice-logo) {
+    position: relative;
+    z-index: 1;
+}
+
+.card h2 {
+    color: #0f0a07;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card p {
+    color: #0a0503;
+    word-wrap: break-word;
+}
+
+.card h4 {
+    color: #120e0a !important;
+}
+
+.btn-success {
+    background: #b4362a;
+    border-color: #0f0b07;
+}
+
+.btn-success:hover {
+    background: #47e5a3;
+    border-color: #36bc67;
+}
+
+.btn {
+    min-height: 44px;
+    padding: 10px 18px;
+}
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .container {
+        width: 90%;
+        max-width: 800px;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 35px !important;
+    }
+
+    .invoice-logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 10px !important;
+
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .card {
+        width: 100%;
+        padding: 22px !important;
+
+        border-radius: 10px;
+    }
+
+    /* Smaller watermark */
+
+    .invoice-logo {
+        width: 220px;
+        height: 220px;
+        opacity: 0.15;
+    }
+
+    .card h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        width: 100%;
+        display: block;
+
+        margin-bottom: 10px;
+
+        padding: 11px 15px;
+
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .container {
+        padding: 7px !important;
+    }
+
+    .card {
+        padding: 18px !important;
+    }
+
+    .invoice-logo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card h4 {
+        font-size: 17px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+@media print {
+
+    body {
+        background: white !important;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .card {
+        max-width: 100%;
+        box-shadow: none !important;
+    }
+
+    .btn {
+        display: none !important;
+    }
+
+    .invoice-logo {
+        opacity: 0.10;
+    }
+}

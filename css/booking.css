@@ -1,0 +1,174 @@
+body{
+background:#eef3f9;
+font-family:Arial,sans-serif;
+}
+
+.card{
+border:none;
+border-radius:15px;
+}
+
+.summary{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+position:sticky;
+top:20px;
+}
+
+.summary h3{
+text-align:center;
+margin-bottom:20px;
+}
+
+button{
+width:100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    background: #eef3f9;
+    font-family: Arial, sans-serif;
+}
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.summary {
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    position: sticky;
+    top: 20px;
+}
+
+.summary h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    min-height: 50px;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .summary {
+        position: static;
+        top: auto;
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .summary h3 {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    button {
+        min-height: 50px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        border-radius: 13px;
+    }
+
+    .summary {
+        width: 100%;
+        padding: 20px 16px;
+        border-radius: 13px;
+        position: static;
+    }
+
+    .summary h3 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    button {
+        width: 100%;
+        min-height: 52px;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 9px;
+    }
+}
+@media (max-width: 400px) {
+    body {
+        padding: 8px;
+    }
+    .summary {
+        padding: 18px 13px;
+        border-radius: 12px;
+    }
+    .summary h3 {
+        font-size: 19px;
+    }
+    button {
+        min-height: 50px;
+        padding: 13px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 360px) {
+    body {
+        padding: 6px;
+    }
+    .summary {
+        padding: 16px 11px;
+    }
+    .summary h3 {
+        font-size: 18px;
+    }
+    button {
+        min-height: 48px;
+        font-size: 14px;
+    }
+}
+@media (hover: none) and (pointer: coarse) {
+    button:active {
+        transform: scale(.98);
+    }
+}
+@media (hover: hover) and (pointer: fine) {
+    button:hover {
+        opacity: .9;
+    }
+}
